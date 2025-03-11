@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html" id="logout-btn">Logout</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h2>Your Shopping Cart</h2>
+
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <p><strong>Subtotal:</strong> ₹<span id="subtotal">0.00</span></p>
+            <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </section>
+    <div class="product">
+        <img src="images/product1.jpg" alt="Product 1" class="product-image" data-product="Smartphone X">
+        <h3>Smartphone </h3>
+        <p>₹10000</p>
+    </div>
+    
+
+    <script src="cart.js"></script>
+</body>
+</html>

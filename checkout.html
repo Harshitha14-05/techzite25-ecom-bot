@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <section class="checkout-container">
+        <h2>Checkout</h2>
+        
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <ul id="order-items">
+                <!-- Dynamically inserted cart items -->
+            </ul>
+            <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+        </div>
+
+        <div class="shipping-details">
+            <h3>Shipping Information</h3>
+            <form id="checkout-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" required>
+
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" required>
+
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method">
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

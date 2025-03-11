@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <section class="profile-container">
+        <h2>My Profile</h2>
+        <div class="profile-card">
+            <img src="images/user-avatar.png" alt="User Avatar" class="avatar">
+            <h3 id="user-name">John Doe</h3>
+            <p>Email: <span id="user-email">johndoe@example.com</span></p>
+            <p>Joined: <span id="user-joined">Mar 1, 2025</span></p>
+        </div>
+
+        <h2>Order History</h2>
+        <div class="order-history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="order-list">
+                    <tr>
+                        <td>#1001</td>
+                        <td>Smartphone X</td>
+                        <td>Mar 09, 2025</td>
+                        <td>₹699.99</td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Wireless Headphones</td>
+                        <td>mar 09, 2025</td>
+                        <td>₹500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="profile.js"></script>
+</body>
+</html>

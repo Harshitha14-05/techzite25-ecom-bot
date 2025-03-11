@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <section class="products-page">
+        <h2>All Products</h2>
+        
+        <div class="filter-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home Appliances</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="product-list">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <script src="products.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
